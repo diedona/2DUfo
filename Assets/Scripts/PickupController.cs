@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 
-public class Rotator : MonoBehaviour
+public class PickupController : MonoBehaviour
 {
 
     public Transform _transform;
-    public int Points;
+    public int Points
+    {
+        get;
+        private set;
+    }
     public bool TransformationDone;
 
     private Vector3 currentScale;
